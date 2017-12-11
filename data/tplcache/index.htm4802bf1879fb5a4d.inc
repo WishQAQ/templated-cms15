@@ -1,0 +1,40 @@
+<?php
+$z[0]=Array("global","",255,281);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",322,349);
+$z[1][4]['name']="cfg_keywords";
+$z[2]=Array("global","",388,418);
+$z[2][4]['name']="cfg_description";
+$z[3]=Array("channel","\r\n<li><a href=\"[field:typelink/]\" title=\"[field:typename/]\">[field:typename/]</a></li>\r\n",2524,2676);
+$z[3][4]['type']="top";
+$z[4]=Array("global","",3643,3664);
+$z[4][4]['name']="cfg_gg";
+$z[5]=Array("global","",4330,4354);
+$z[5][4]['name']="cfg_phone";
+$z[6]=Array("arclist","\r\n          <li> <a href=\"[field:arcurl/]\" title=\"[field:title/]\"><img src=\"[field:picname/]\" alt=\"[field:title/]\"  width=\"223\" height=\"298\"/>\r\n            <p class=\"iproname\">—[field:title/]—</p>\r\n            <span class=\"moreview\">—[field:description function=\"cn_substr(@me,100)\"/]—</span> </a>\r\n		  </li>\r\n",4897,5286);
+$z[6][4]['row']="6";
+$z[6][4]['typeid']="3";
+$z[7]=Array("arclist","\r\n      <li> <a href=\"[field:arcurl/]\" title=\"[field:title/]\"><img src=\"[field:picname/]\" alt=\"[field:title/]\"  width=\"240\" height=\"320\" />\r\n        <p>—[field:title/]—</p>\r\n        <span>[field:description function=\"cn_substr(@me,200)\"/]...</span> </a>\r\n	  </li>\r\n",5539,5879);
+$z[7][4]['row']="4";
+$z[7][4]['typeid']="4";
+$z[8]=Array("type","<a href=\"[field:typelink/]\" title=\"查看更多\"> 查看更多</a>",5920,6020);
+$z[8][4]['typeid']="4";
+$z[9]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\" title=\"[field:title/]\">\r\n        <div class=\"time\"><span>[field:pubdate function=\"MyDate('m-d',@me)\"/]</span><font>[field:pubdate function=\"MyDate('Y',@me)\"/]</font></div>\r\n        <div class=\"newsli_r\">\r\n          <p class=\"newsli_rt\"><span class=\"fl\">[field:title/]</span></p>\r\n          <em>点击量：[field:click/]</em>\r\n          <p>[field:description function=\"cn_substr(@me,255)\"/]...</p>\r\n        </div>\r\n        </a>\r\n	  </li>\r\n",6250,6814);
+$z[9][4]['row']="2";
+$z[9][4]['typeid']="2";
+$z[9][4]['titlelen']="300";
+$z[10]=Array("type","<a href=\"[field:typelink/]\" title=\"查看更多\"> 查看更多</a>",6990,7090);
+$z[10][4]['typeid']="2";
+$z[11]=Array("type","<a class=\"casemore\" href=\"[field:typelink/]\" title=\"查看更多\"> 查看更多</a>",7309,7426);
+$z[11][4]['typeid']="6";
+$z[12]=Array("arclist"," \r\n	  <li><a href=\"[field:arcurl/]\" title=\"[field:title/]\"><img src=\"[field:picname/]\" alt=\"[field:title/]\"  width=\"210\" height=\"280\" />\r\n        <p>[field:title/]</p>\r\n        </a>\r\n	  </li>\r\n",7459,7723);
+$z[12][4]['row']="3";
+$z[12][4]['typeid']="6";
+$z[13]=Array("flink","  [field:link /]  ",8130,8208);
+$z[13][4]['titlelen']="50";
+$z[13][4]['row']="10";
+$z[13][4]['type']="text";
+$z[14]=Array("include","",8236,8273);
+$z[14][4]['filename']="footer.htm";
+
+?>

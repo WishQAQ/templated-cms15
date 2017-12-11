@@ -1,0 +1,13 @@
+INSERT INTO `dede_uploads` VALUES('1','2','玩转红蓝撞色英伦风','/uploads/allimg/160930/1309432053-0.jpg','1','240','320','0','22908','1475212184','1');
+INSERT INTO `dede_uploads` VALUES('2','3','返璞归真的教堂婚礼','/uploads/allimg/160930/131100JK-0.jpg','1','240','320','0','26183','1475212261','1');
+INSERT INTO `dede_uploads` VALUES('3','4','汉·礼','/uploads/allimg/160930/131120I43-0.jpg','1','210','280','0','17497','1475212282','1');
+INSERT INTO `dede_uploads` VALUES('4','5','完美型','/uploads/allimg/160930/131220J20-0.jpg','1','210','280','0','17497','1475212340','1');
+INSERT INTO `dede_uploads` VALUES('5','6','【Let\'s Rock】','/uploads/allimg/160930/1312432933-0.jpg','1','240','320','0','26183','1475212364','1');
+INSERT INTO `dede_uploads` VALUES('6','7','我的向日葵','/uploads/allimg/160930/131301J64-0.jpg','1','240','320','0','22908','1475212382','1');
+INSERT INTO `dede_uploads` VALUES('7','8','为爱加冕童话主题婚礼','/uploads/allimg/160930/13133S258-0.jpg','1','223','298','0','17644','1475212419','1');
+INSERT INTO `dede_uploads` VALUES('8','9','婚庆网之新娘外景拍摄婚纱照必备单品','/uploads/allimg/160930/1314326011-0.png','1','675','472','0','609230','1475212474','1');
+INSERT INTO `dede_uploads` VALUES('9','10','婚庆典礼实用着装搭配技巧','/uploads/allimg/160930/13145320A-0.png','1','651','511','0','343372','1475212494','1');
+INSERT INTO `dede_uploads` VALUES('10','11','浪漫的夜晚','/uploads/allimg/160930/13153L345-0.jpg','1','300','300','0','78378','1475212538','1');
+INSERT INTO `dede_uploads` VALUES('11','12','欧式背景纱幔4*8米1套','/uploads/allimg/160930/13155L535-0.jpg','1','240','320','0','26183','1475212558','1');
+INSERT INTO `dede_uploads` VALUES('12','13','专业婚礼司仪1名','/uploads/allimg/160930/1316302135-0.jpg','1','210','280','0','17497','1475212591','1');
+INSERT INTO `dede_uploads` VALUES('13','14','那个晚上','/uploads/allimg/160930/131F55540-0.jpg','1','223','298','0','17644','1475212626','1');

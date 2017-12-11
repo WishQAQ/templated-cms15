@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}"/>
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}"/>
+<meta name="Author" content="024"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<link href="/skin/style/fy.css" rel="stylesheet" type="text/css"/>
+<LINK href="/skin/style/style.css" rel=stylesheet>
+<LINK href="/skin/style/jbox.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/FormValid.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.jBox-2.3.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/search.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/banner.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jQselect.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.lazyload.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.jslides.js"></script>
+<script type="text/javascript" src="/skin/style/urlredirect.js"></script>
+<!--[if IE 6]><script type="text/javascript" src="js/DD_belatedPNG.js"></script><![endif]-->
+<script>
+$(function() {
+    if (window.PIE) {
+        $('.bullet').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+</script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="namefra">
+    <div class="keca"><p class="pronaaf">{dede:field.typename/}</p></div>
+    <p class="pronaa">当前位置：{dede:field name='position'/}</p>
+</div>
+
+<div class="fyMain">
+<div class="vnav">
+  <div class="main">
+        <ul class="viewmenu">
+{dede:channel    type ='son'                    }
+<li><a href='[field:typelink/]'>[field:typename/]</a></li>
+{/dede:channel}
+          </ul>
+      </div>
+</div>
+<div class="clear"></div>
+<div class="fyfra">
+<div class="productfra">
+<ul class="news_list">
+{dede:list pagesize ='5'}
+<li> 
+	<a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a>
+    <p class="newslisttime"><span class="fl">[field:pubdate function="MyDate('Y/m/d',@me)"/]</span><a href="[field:arcurl/]" title="Readmore">Readmore</a></p>
+    <p class="newstxt">[field:description function="cn_substr(@me,255)"/]...</p>
+</li>
+{/dede:list}
+  </ul>
+
+<div class="page">
+{dede:pagelist listitem="info,index,end,pre,next,pageno,option"listsize="3"/}
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="footclear"></div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".fyRight img").lazyload({
+			threshold: 20,
+			placeholder: "images/blank.gif",
+			effect: showeffect
+		})
+	});
+</script>
+
+<div class="footclear"></div>
+      </div>
+    	
+  </div>
+<div class="foot">
+{dede:include filename="footer.htm"/}
+
+</body>
+

@@ -1,0 +1,197 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+<meta name="description" content="{dede:global.cfg_description/}"/>
+<meta name="author" content="by vycms"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<link href="/skin/style/index.css" rel="stylesheet" type="text/css"/>
+<LINK href="/skin/style/style.css" rel=stylesheet>
+<LINK href="/skin/style/jbox.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/FormValid.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.jBox-2.3.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/search.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/banner.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jQselect.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.lazyload.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.jslides.js"></script>
+<script type="text/javascript" src="/skin/style/urlredirect.js"></script>
+<!--[if IE 6]><script type="text/javascript" src="js/DD_belatedPNG.js"></script><![endif]-->
+<script>
+$(function() {
+    if (window.PIE) {
+        $('.bullet').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+</script>
+</head>
+<body>
+<div class="fixed"> <a href="/message/" title="留言反馈" class="barbook"></a> <a href="javascript:;" title="二维码" class="codepic"></a> <a href="javascript:;" title="返回顶部" class="backup"></a>
+<div> <img src="/skin/images/qrcode.png" alt="这里是您的网站名称" class="code"> </div>
+</div>
+<div class="clear"></div>
+<div class="banner">
+<div class="notice">
+<div class="main">
+<div class="float">
+<div class="menu">
+<ul>
+<li><a title="网站首页" href="/" class="cur">网站首页</a> </li>
+{dede:channel    type ='top'                    }
+<li><a href="[field:typelink/]" title="[field:typename/]">[field:typename/]</a></li>
+{/dede:channel}
+</ul>
+</div>
+</div>
+<div class="search">
+<form name="formsearch" action="/plus/search.php">
+<input type="text" class="text" name="q" id="kws" value="请输入搜索关键词" onFocus="if (value =='请输入搜索关键词'){value =''}"/>
+<div class="select">
+<select id="rid" style="display: none" name='typeid'>
+<option value="2" selected="selected">新闻资讯</option>
+<option value="3">婚纱展示</option>
+<option value="4">新娘造型</option>
+<option value="5">礼服展示</option>
+<option value="6">优秀案例</option>
+</select>
+</div>
+<input type="submit" title="搜索" class="button" value=""/>
+</form>
+<script type=text/javascript>
+                jQuery(document).ready(function() {
+                    jQuery("#rid").selectbox();
+                });
+            </script>
+</div>
+<div class="noticecon"><b>网站公告：</b>
+<marquee scrollamount="2" scrolldelay="5" onMouseOut="this.start()" onMouseOver="this.stop()">
+{dede:global.cfg_gg/}
+</marquee>
+</div>
+</div>
+</div>
+<div class="main_content">
+<div class="nf_hp_kv js_nf_hp_kv">
+<div class="window js_window">
+<div style="display: none; background-repeat:no-repeat" class="kv_item" data-bg="/skin/images/banner1.jpg"></div>
+<div style="display: none; background-repeat:no-repeat" class="kv_item" data-bg="/skin/images/banner1.jpg"></div>
+<div style="display: none; background-repeat:no-repeat" class="kv_item" data-bg="/skin/images/banner1.jpg"></div>
+</div>
+</div>
+<div class="head"> <a href="index.php" title="" class="logo"><img src="/skin/images/logo.png" class="pngFix" alt=""/></a>
+<div class="tel"><span>service phone</span>
+<p>{dede:global.cfg_phone/}</p>
+</div>
+</div>
+</div>
+<div class="btn_prev js_btn_prev"><a href="javascript:;"><</a></div>
+  <div class="btn_next js_btn_next"><a href="javascript:;">></a></div>
+  <div class="js_nav">
+    <ul>
+    </ul>
+  </div>
+</div> 
+<!--banner-->
+
+<div class="cai">
+  <div class="wedding">
+    <div class="slider"> <span id="left" class="end"><img src="/skin/images/left.png"/></span><span id="right"><img src="/skin/images/right.png"/></span> </div>
+    <div class="ipro" id="ipro2">
+      <div class="main">
+        <ul class="">
+{dede:arclist    row='6'    typeid='3'                 }
+          <li> <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname/]" alt="[field:title/]"  width="223" height="298"/>
+            <p class="iproname">—[field:title/]—</p>
+            <span class="moreview">—[field:description function="cn_substr(@me,100)"/]—</span> </a>
+		  </li>
+{/dede:arclist}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="store">
+  <p class="proname">新娘造型</p>
+  <div class="kecd">
+    <p class="pronad">Bridal Beauty</p>
+  </div>
+  <div class="hair">
+    <ul>
+{dede:arclist      row='4'     typeid='4'              }
+      <li> <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname/]" alt="[field:title/]"  width="240" height="320" />
+        <p>—[field:title/]—</p>
+        <span>[field:description function="cn_substr(@me,200)"/]...</span> </a>
+	  </li>
+{/dede:arclist}
+    </ul>
+  </div>
+  <p class="more">{dede:type typeid='4'}<a href="[field:typelink/]" title="查看更多"> 查看更多</a>{/dede:type}</p></div>
+<div class="clear"></div>
+<div class="track">
+  <p class="proname">新闻资讯</p>
+  <div class="kec">
+    <p class="prona"><span>NEWS CENTER</span></p>
+  </div>
+  <div class="news">
+    <ul class="newsmain">
+{dede:arclist    row='2'       typeid='2'    titlelen='300'            }
+      <li><a href="[field:arcurl/]" title="[field:title/]">
+        <div class="time"><span>[field:pubdate function="MyDate('m-d',@me)"/]</span><font>[field:pubdate function="MyDate('Y',@me)"/]</font></div>
+        <div class="newsli_r">
+          <p class="newsli_rt"><span class="fl">[field:title/]</span></p>
+          <em>点击量：[field:click/]</em>
+          <p>[field:description function="cn_substr(@me,255)"/]...</p>
+        </div>
+        </a>
+	  </li>
+{/dede:arclist}
+    </ul>
+    <p class="picimg"><img src="/skin/images/bg3.jpg" alt="新闻资讯" width="342" height="320" /></p>
+  </div>
+  <div class="clear"></div>
+  <p class="more">{dede:type typeid='2'}<a href="[field:typelink/]" title="查看更多"> 查看更多</a>{/dede:type}</p></div>
+<div class="clear"></div>
+<div class="case">
+  <div class="casefra">
+    <div class="caseleft">
+      <p class="casename">
+        <label>优秀案例</label>
+        <span>Case center</span></p>
+    {dede:type typeid='6'}<a class="casemore" href="[field:typelink/]" title="查看更多"> 查看更多</a>{/dede:type}</div>
+    <ul class="caseul">
+{dede:arclist    row='3'     typeid='6'                } 
+	  <li><a href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname/]" alt="[field:title/]"  width="210" height="280" />
+        <p>[field:title/]</p>
+        </a>
+	  </li>
+{/dede:arclist}
+    </ul>
+  </div>
+</div>
+<div class="footclear"></div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".fyRight img").lazyload({
+			threshold: 20,
+			placeholder: "/skin/images/blank.gif",
+			effect: showeffect
+		})
+	});
+</script>
+<div class="footclear"></div>
+<div class="f_link">
+  <div class="main"><span>友情链接：</span>
+    <div class="d_linleft">   {dede:flink titlelen='50' row='10' type='text'}  [field:link /]  {/dede:flink}  </div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>

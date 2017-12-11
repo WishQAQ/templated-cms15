@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}"/>
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}"/>
+<meta name="Author" content="024"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<link href="/skin/style/fy.css" rel="stylesheet" type="text/css"/>
+<LINK href="/skin/style/style.css" rel=stylesheet>
+<LINK href="/skin/style/jbox.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/FormValid.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.jBox-2.3.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/search.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/banner.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jQselect.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.lazyload.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.jslides.js"></script>
+<script type="text/javascript" src="/skin/style/urlredirect.js"></script>
+<!--[if IE 6]><script type="text/javascript" src="js/DD_belatedPNG.js"></script><![endif]-->
+<script>
+$(function() {
+    if (window.PIE) {
+        $('.bullet').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+</script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="namefra">
+  	<p class="pronaa2">Message feedback</p>
+    <div class="keca"><p class="pronaaf">留言反馈</p></div>
+</div>
+<script type="text/javascript" language="javascript">//验证码 function changeAuthCode(){var num =newDate().getTime();varrand= Math.round(Math.random()*10000);    num = num +rand;    $('#ver_code').css('visibility','visible');if($("#vdimgck")[0]){        $("#vdimgck")[0].src ="../include/vdimgck.php?tag="+ num;}returnfalse;}</script>
+<div class="fyMain">
+ 
+  <div class="fyfra">
+      <div class="productfra1">
+      <div class="message">
+<form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+
+          <ul>
+            <li>
+              <p class="message_title"><span class="c_red">* </span>姓名：</p>
+              <p class="message_content">
+                <input type="text" name="nickname" id="nickname" size="30" maxlength="10" valid="required|limit" errmsg="请输入姓名！|姓名长度必须在1-15个字符之间！" max="10" min="1">
+              </p>
+            </li>
+            <li>
+              <p class="message_title"><span class="c_red">* </span>手机：</p>
+              <p class="message_content">
+                 <input type="text" name="telephone" size="30" id="telephone" maxlength="11" valid="required|isMobile|limit" errmsg="请输入手机号码！|手机号码格式有误！|手机号码长度必须为11个字符！" max="11" min="11">
+              </p>
+            </li>
+            <li>
+              <p class="message_title"><span class="c_red"></span>邮箱：</p>
+              <p class="message_content">
+                <input name="email" type="text" id="email" size="30" valid="isEmail" errmsg="邮箱格式有误！">
+              </p>
+            </li>
+            <li>
+              <p class="message_title"><span class="c_red">* </span>主题：</p>
+              <p class="message_content">
+                 <input name="title" type="text" id="title" size="30" valid="required" errmsg="请填写留言主题！">
+              </p>
+            </li>
+            <li class="contentb">
+              <p class="message_title"><span class="c_red">* </span>内容：</p>
+              <p class="message_content">
+               <textarea name="content" id="content1" valid="required" cols="50" rows="7" errmsg="请填写留言内容！"></textarea>
+              </p>
+            </li>
+           
+            <li class="yzm">
+            
+
+           <p class="message_title"><span class="c_red">* </span>验证码：</p>
+           
+           <p class="message_yzminput">
+               <input name="validate" type="text" id="vdcode" style="text-transform:uppercase;" size="8"/>
+              </p>
+              <p class="message_yzmico"><img id="vdimgck" align="absmiddle" onClick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？点击更换" src="../include/vdimgck.php"/></p>
+              <p class="message_sub"><input type="submit" name="submit"  value="" style="background:url(../skin/images/book_sub.jpg) no-repeat;border: none;" /></p>
+            </li>
+<input type="hidden" name="dede_fields" value="nickname,text;telephone,text;email,text;title,text;message_title,multitext" />
+<input type="hidden" name="dede_fieldshash" value="764e0514fcd875f765792b49dae29181" />
+          </ul>
+          </form>
+        </div>
+
+  </div>
+</div>
+</div>
+<div class="footclear"></div>
+      </div>
+    	
+  </div>
+{dede:include filename="footer.htm"/}
+</body>
+

@@ -1,0 +1,2 @@
+INSERT INTO `dede_search_keywords` VALUES('1','士大夫','士大夫 士大夫','1','0','1475205538','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','是的','是的','3','0','1475210758','0','0');

@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>玩转红蓝撞色英伦风-</title>
+<meta name="keywords" content="玩转,红蓝,撞色,英伦,风,我,手里,握着,的,"/>
+<meta name="description" content="我手里握着的，我们放飞的，我们头顶的、心里的、梦里的那一颗颗的朦胧球，都是你给我的记忆碎片，那里面装着的是你我的现在与未来，它们在这华美的夜里，因为我们的爱而熠熠"/>
+<meta name="Author" content="024"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<link href="/skin/style/fy.css" rel="stylesheet" type="text/css"/>
+<LINK href="/skin/style/style.css" rel=stylesheet>
+<LINK href="/skin/style/jbox.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/FormValid.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.jBox-2.3.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/search.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/banner.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jQselect.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.lazyload.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/style/jquery.jslides.js"></script>
+<script type="text/javascript" src="/skin/style/urlredirect.js"></script>
+<!--[if IE 6]><script type="text/javascript" src="js/DD_belatedPNG.js"></script><![endif]-->
+<script>
+$(function() {
+    if (window.PIE) {
+        $('.bullet').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+</script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="namefra">
+    <div class="keca"><p class="pronaaf">{dede:field.typename/}</p></div>
+    <p class="pronaa">当前位置：{dede:field name='position'/}</p>
+</div>
+
+<div class="fyMain">
+<div class="vnav">
+  <div class="main">
+        <ul class="viewmenu">
+          
+          </ul>
+      </div>
+</div>
+<div class="clear"></div>
+<div class="fyfra">
+      <div class="productfra1">
+    		<h2 class="center"><span class="fl"><font>Title</font><br>
+      {dede:field.title/}</span></h2>
+    <p class="title_s"> 发布时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}&nbsp;&nbsp;&nbsp;&nbsp;作者：{dede:field.writer/}&nbsp;&nbsp;&nbsp;&nbsp;点击量：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"type='text/javascript' language="javascript"></script></p>
+    <div class="line_s"></div>
+         <div class="newsview">
+        {dede:field.body/}
+         </div>
+   <a href="/xnzx/" title="返回列表" class="returnlist">返回列表</a>
+    
+  	  </div>
+</div>
+
+</div>
+
+<div class="footclear"></div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".fyRight img").lazyload({
+			threshold: 20,
+			placeholder: "images/blank.gif",
+			effect: showeffect
+		})
+	});
+</script>
+
+<div class="footclear"></div>
+      </div>
+    	
+  </div>
+{dede:include filename="footer.htm"/}
+</body>
+

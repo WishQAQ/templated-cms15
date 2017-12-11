@@ -1,0 +1,74 @@
+/* 织梦58（dede58.com）做最好的织梦整站模板下载网站 */
+@charset "utf-8";
+/* CSS Document */
+
+.banner {
+	width: 100%;
+	position: relative;
+}
+.main_content {
+	width: 1004px;
+	margin: 0 auto 0px;
+	position: relative;
+	zoom: 1;
+}
+.nf_hp_kv {
+	margin: 0 -500px;
+	position: relative;
+	width: 2000px;
+}
+.window {
+	height: 383px;
+	overflow: hidden;
+	position: relative;
+	width: 2000px;
+}
+.kv_item {
+	height: 383px;
+	overflow: hidden;
+	padding: 0 500px;
+	position: absolute;
+	width: 1004px;
+}
+.js_nav {
+	left: 0;
+	height: 6px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+}
+.js_nav ul {
+	margin: 0 auto;
+	width: 940px;
+	text-align: right;
+}
+.js_nav li {
+	height: 4px;
+	width: 50px;
+	margin: 12px;
+	display: inline-block;
+*display:inline;
+*zoom:1;
+}
+.js_nav li a {
+	display: inline;
+	float: left;
+	height: 4px;
+	overflow: hidden;
+	width: 100%;
+	font-size: 0;
+	background: #363636;
+}
+.js_nav li.active a, .js_nav li a:hover {
+	background: #3cb19f
+}
+.btn_prev {
+	left: 0;
+}
+.btn_next {
+	right: 0;
+}
+.btn_prev, .btn_next {
+	display: none;
+}

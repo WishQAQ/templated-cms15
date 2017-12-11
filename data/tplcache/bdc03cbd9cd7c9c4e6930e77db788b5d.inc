@@ -1,0 +1,1 @@
+<a class="casemore" href="[field:typelink/]" title="查看更多"> 查看更多</a>

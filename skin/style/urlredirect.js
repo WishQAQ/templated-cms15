@@ -1,0 +1,2 @@
+function urlredirect(){var sUserAgent=navigator.userAgent.toLowerCase();if((sUserAgent.match(/(ipod|iphone os|midp|ucweb|android|windows ce|windows mobile)/i))){var thisUrl=window.location.href;window.location.href=thisUrl.substr(0,thisUrl.lastIndexOf('/')+1)+'wap/';}}
+urlredirect();
